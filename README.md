@@ -3,8 +3,13 @@ Backup all volumes described in `docker-compose.yaml` and restore them when need
 
 ## Instructions:
 
-1. `sudo chmod +x backup-volumes.sh`.
-2. `sudo chmod +x restore.sh`.
+1. `git clone` repo.
+
+2. `mv` or `cp` files into `docker/`.
+
+3. `sudo chmod +x backup-volumes.sh`.
+
+4. `sudo chmod +x restore.sh`.
 
 ## BackUp execution:
 
