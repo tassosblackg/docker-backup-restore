@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Restore only one volume selected by the user
+
 dirname=${PWD##*/}
 
 # filename is in a format like postgres_data-Timestamp.tar.gz,
