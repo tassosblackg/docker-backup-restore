@@ -5,8 +5,8 @@ docker-compose pause
 dirname=${PWD##*/}
 timestamp=$(date +%d-%m-%Y_%H:%M:%S)
 # echo $timestamp
-backupFileName="posteges_data-"
-backupFileName+=$timestamp
+# backupFileName="posteges_data-"
+# backupFileName+=$timestamp
 # echo $backupFileName
 for nv in `docker volume ls -q`
 do
@@ -24,7 +24,7 @@ do
       -v $nv:/backup-volume \
       -v "$(pwd)":/backup \
       busybox \
-      tar -zcvf /backup/"$backupFileName".tar.gz /backup-volume
+      tar -zcvf /backup/"$f-$timestamp".tar.gz /backup-volume
     echo "done"
   fi
 done
