@@ -23,3 +23,7 @@ Backup all volumes described in `docker-compose.yaml` and restore them when need
 ## NOTICE:
 
 - Scripts must be inside `docker/` folder, where your `docker-compose.yaml` file is.
+
+## IMPORTANT:
+
+- Change `backupFileName` according to your volume name, in our case we had only one postgress volume.
